@@ -4,7 +4,7 @@ info:
   description: API Definition of hello
   version: 1.0.0
 servers:
-- url: http://localhost:8290/hello
+- url: http://localhost:8290
 paths:
   /:
     get:
