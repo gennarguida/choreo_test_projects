@@ -6,6 +6,7 @@
     <groupId>test.doctolib</groupId>
     <artifactId>test_project-ei</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../../test_project-ei/pom.xml</relativePath>
   </parent>
   <groupId>test.doctolib</groupId>
   <artifactId>test_project-ei-car</artifactId>
