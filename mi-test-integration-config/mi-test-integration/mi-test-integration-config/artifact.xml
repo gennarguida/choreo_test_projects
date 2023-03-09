@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="mi-api" groupId="doctolib.test.integration.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/mi-api.xml</file>
+    </artifact>
+    <artifact name="mi-api_swagger" groupId="doctolib.test.integration.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/mi-api_swagger.yaml</file>
+    </artifact>
+    <artifact name="mi-api_metadata" groupId="doctolib.test.integration.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/mi-api_metadata.yaml</file>
+    </artifact>
+</artifacts>

@@ -1,0 +1,11 @@
+---
+key: "mi-api-1.0.0"
+name : "mi-api"
+displayName : "mi-api"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/mi_test"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: mi-api
+  description: API Definition of mi-api
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/mi_test
+paths:
+  /what:
+    get:
+      responses:
+        default:
+          description: Default response

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/mi_test" name="mi-api" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/what">
+        <inSequence>
+            <log level="full"/>
+            <payloadFactory media-type="json">
+                <format>
+        		{
+        		"Message":"$1"
+        		}
+        		</format>
+                <args>
+                    <arg value="This comes from MI (conf. driven) project"/>
+                </args>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
