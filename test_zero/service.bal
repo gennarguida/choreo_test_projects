@@ -1,5 +1,15 @@
 import ballerina/http;
 
+type Movie readonly & record{
+    string title;
+    string director;
+};
+
+table<Movie> key(title) movies = table [
+    {title: "Moonrise Kingdom", director:"Wes Anderson"},
+    {title: "Spirited Away", director: "Hayao Miyazaki"}
+];
+
 # A service representing a network-accessible API
 # bound to port `9090`.
 service / on new http:Listener(9090) {
@@ -14,4 +24,11 @@ service / on new http:Listener(9090) {
         }
         return "Hello, " + name;
     }
+
+    resource function post movies(@http:Payload Movie movie) returns Movie{
+        movies.add(movie);
+        return movie;
+    }
+
+    
 }
