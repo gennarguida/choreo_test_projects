@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api context="/default" name="hello" xmlns="http://ws.apache.org/ns/synapse">
-    <resource methods="GET">
+    <resource methods="GET" url-mapping="/hello">
         <inSequence>
             <log level="full"/>
             <payloadFactory media-type="json">

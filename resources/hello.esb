@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <esb:EsbDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:esb="http:///org/wso2/integrationstudio/eclipse/gmf/esb">
   <server type="API">
-    <children xsi:type="esb:SynapseAPI" apiName="hello" context="/hello">
-      <resources allowGet="true">
+    <children xsi:type="esb:SynapseAPI" apiName="hello" context="/default">
+      <resources urlStyle="URL_MAPPING" urlMapping="/hello" allowGet="true">
         <inputConnector/>
         <outputConnector>
           <outgoingLink target="//@server/@children.0/@resources.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.0/@inputConnector"/>
