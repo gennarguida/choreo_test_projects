@@ -31,7 +31,7 @@ service / on new http:Listener(9090) {
 
     resource function post movies(@http:Payload Movie movie) returns Movie[]{
         movies.add(movie);
-        return movies;
+        return movies.toArray();
     }
 
     
