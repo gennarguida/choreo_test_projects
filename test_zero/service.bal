@@ -12,13 +12,12 @@ table<Movie> key(title) movies = table [
 
 # A service representing a network-accessible API
 # bound to port `9090`.
-service / on new http:Listener(9090) {
+service /moviedatabase on new http:Listener(9090) {
 
     # A resource for generating greetings
     # + name - the input string name
     # + return - string name with hello message or error
     resource function get greeting(string name) returns string|error {
-        // Send a response back to the caller.
         if name is "" {
             return error("name should not be empty!");
         }
@@ -31,7 +30,7 @@ service / on new http:Listener(9090) {
 
     resource function post movies(@http:Payload Movie movie) returns Movie[]{
         movies.add(movie);
-        return movies.toArray();
+        return movies.toArray();    
     }
 
     
