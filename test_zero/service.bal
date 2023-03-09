@@ -25,6 +25,10 @@ service / on new http:Listener(9090) {
         return "Hello, " + name;
     }
 
+    resource function get movies() returns Movie[]{
+        return movies.toArray();
+    }
+
     resource function post movies(@http:Payload Movie movie) returns Movie{
         movies.add(movie);
         return movie;
