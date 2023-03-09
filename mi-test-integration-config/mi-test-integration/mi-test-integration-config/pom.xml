@@ -6,7 +6,7 @@
     <groupId>doctolib.test.integration</groupId>
     <artifactId>mi-test-integration</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <relativePath>../mi-test-integration/pom.xml</relativePath>
+    <relativePath>../../../mi-test-integration/pom.xml</relativePath>
   </parent>
   <groupId>doctolib.test.integration</groupId>
   <artifactId>mi-test-integration-config</artifactId>
